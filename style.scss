@@ -1,0 +1,88 @@
+// VAR
+$main-bg : 	#FAF9F6;
+$second-bg: #F5E9DA;
+$header : #4B2E2B;
+$main-text:#4B2E2B;
+$second-text:#333333;
+$main-btn:#C69C6D;
+$second-btn:#6B8E23;
+$border:#E0D4C1;
+$img-bg:url(/assets/img/bg.png);
+$ease : ease all 0.3s;
+$float-up:translateY(-5px);
+$sec-bg:url(/assets/img/sec-bg.png);
+// MODUL
+
+nav{
+    background-color:$header;
+    
+    .container{
+        color: $second-bg;
+    }
+}
+
+#home{
+    background-image: $img-bg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    top: 0;
+
+}
+
+#coffee{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+#coffee:hover{
+    box-shadow: 0px 2px 5px #3333;
+    transform: translateY(-5px);
+    transition: ease all 0.3s;
+}
+
+#tombol{
+    background-color: $main-btn;
+    color: $main-bg;
+}
+
+.desc{
+    font-size: 20px;
+    border-bottom: 2px solid white;
+}
+
+#tombol:hover{
+    background-color: $second-btn ;
+    transition: $ease;
+    transform: $float-up;
+}
+
+
+footer{
+    background-color: $header;
+}
+
+section{
+    border: $border;
+}
+
+#card{
+    border-left: 2px solid $border;
+    border-right: 2px solid $border;
+    
+}
+
+#card:hover{
+    transition: $ease;
+    transform: $float-up;
+    box-shadow: 0px 1px 10px #3333;
+}
+
+#contact{
+    background-image: $sec-bg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
